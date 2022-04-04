@@ -1,18 +1,31 @@
 class MenuCommand:
     def description(self):
+        print("""
+        1. New event
+        2. List calendar
+        3. Export calendar to iCalendar
+        4. Exit
+        """)
+        ExitCommand.execute()
         raise NotImplementedError
-    print("""
-       1. New event
-       2. List calendar
-       3. Export calendar to iCalendar
-       4. Exit
-       """)
-    option = input("Select menu item (1-4): ")
+        
+    option = int(input("Select menu item (1-4): "))
 
-    def execute(self):
+    def execute(self, title, date, time, option):
+        if option == 1:
+            self.title = input("Title: ")
+            self.date = input("Date (DD.MM.YYYY): ")
+            self.time = input("Time (HH:MM): ")
+        dict = {}
+        dict("Title: ")
         raise NotImplementedError
-    if option == 1:
-        print("Siema")
+    
+
+
+    
+
+        
+        
 
 
 

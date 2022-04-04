@@ -9,6 +9,6 @@ def main():
 
     menu.add_command(ExitCommand(menu))
 
-    menu.run()
+    menu.execute()
 
 main()
